@@ -10,6 +10,7 @@ A tiny docker image to expose a Flask-based website to show how HTTP verbs work.
 
 # Dev mode
 
- * `./devserver.sh` will run Flask on port 5000.
- * `./pipfreeze.sh` will update the `requirements.txt` which is used in the build
- * `./docker-rebuild.sh` will rebuild the docker image 
+ * `./pipsetup.sh` will set up a virtualenv (in venv/) and install the required packages in it.
+ * `./devserver.sh` will run Flask locally on port 5000.
+ * `./pipfreeze.sh` will update the `requirements.txt` which is used in the build.
+ * `./docker-rebuild.sh` will rebuild the docker image. Make sure you update "DOCKERUSER" to not-me, and the IP address of your docker machine (get it by running `docker-machine ip`). :)
